@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosas que me gustan - Jugadores de Fútbol</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #0f172a;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.25rem;
+    }
+
+    /* Galería en cuadrícula */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    /* Tarjeta general */
+    .tarjeta {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Efecto al pasar el cursor */
+    .tarjeta:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+
+    .tarjeta img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .info h3 {
+      margin-bottom: 8px;
+      color: #1e293b;
+      font-size: 1.25rem;
+    }
+
+    .info p {
+      color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      color: #e11d48;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jugadores de Fútbol</h1>
+
+  <div class="galeria">
+
+    <!-- 1. Cristiano Ronaldo -->
+    <a href="https://es.wikipedia.org/wiki/Cristiano_Ronaldo" target="_blank" class="tarjeta">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+      <div class="info">
+        <h3>Cristiano Ronaldo</h3>
+        <p>Conocido como CR7, es un delantero portugués destacado por su potencia, capacidad goleadora y liderazgo en la cancha.</p>
+        <span class="btn">Ver más &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 2. Lionel Messi -->
+    <a href="https://es.wikipedia.org/wiki/Lionel_Messi" target="_blank" class="tarjeta">
+      <img src="https://wallpapercave.com/wp/wp11653787.jpg" alt="Lionel Messi">
+      <div class="info">
+        <h3>Lionel Messi</h3>
+        <p>Astro argentino considerado uno de los mejores futbolistas de la historia, famoso por su visión de juego y regate impecable.</p>
+        <span class="btn">Ver más &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 3. Kylian Mbappé -->
+    <a href="https://es.wikipedia.org/wiki/Kylian_Mbapp%C3%A9" target="_blank" class="tarjeta">
+      <img src="https://cdn.britannica.com/39/239139-050-49A950D1/French-soccer-player-Kylian-Mbappe-FIFA-World-Cup-December-10-2022.jpg" alt="Kylian Mbappé">
+      <div class="info">
+        <h3>Kylian Mbappé</h3>
+        <p>Delantero francés reconocido mundialmente por su increíble velocidad, explosividad y definición de cara al arco.</p>
+        <span class="btn">Ver más &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 4. Erling Haaland -->
+    <a href="https://es.wikipedia.org/wiki/Erling_Haaland" target="_blank" class="tarjeta">
+      <img src="https://pictures.tribuna.com/image/cc5eabb9-69d2-4f90-9c7e-b07924843ff1?width=1920&quality=70" alt="Erling Haaland">
+<div class="info">
+        <h3>Erling Haaland</h3>
+        <p>es de noruega .</p>
+        <span class="btn">Ver más &rarr;</span>
+      </div>
+    </a>
